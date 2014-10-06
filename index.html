@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Duality turns your mind upside down</title>
+    <meta name="description" content="ReactiveX: Duality turns your mind upside down">
+    <meta name="author" content="Andre Staltz">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>Software</h1>
+          <h3>Is eating the World</h3>
+          <img src="img/appleworld.jpg" />
+        </section>
+
+        <section data-background="#222">
+          <h2 style="color:#EC0C8E">Asynchronous programming</h2>
+          <p style="color:white" class="fragment">
+            Multiple events and computations happening simultaneously
+          </p>
+        </section>
+
+        <section>
+          <h2 style="color:#592D89">Async is contagious</h2>
+          <h2 style="color:#b7178c" class="fragment">Async makes sense today</h2>
+          <h2 style="color:#EC0C8E" class="fragment">Async performs better</h2>
+        </section>
+
+        <section>
+          <h2>Callbacks</h2>
+          <img src="img/callbacktool.jpg" />
+        </section>
+
+        <section data-background="img/reactivex_bg.jpg">
+          <h2 style="color:white"><img src="img/Rx_Logo_S.png" style="margin:-0.3em 0;background:none;" /> ReactiveX.io</h2>
+        </section>
+
+        <section>
+          <h3>Andre Medeiros</h3>
+          <p><a href="http://twitter.com/andrestaltz" style="color:#349D4A;">@andrestaltz</a></p>
+          <img src="img/futurice-logo.png" width="250px" style="margin-top:3em;" />
+        </section>
+
+        <section>
+          <h2>Reactive Programming</h2>
+          <img src="img/excel.png" />
+        </section>
+
+        <section>
+          <h2>Observer pattern</h2>
+          <img src="img/observerpattern.png" />
+        </section>
+
+        <section>
+          <h2>Observable</h2>
+          <p>Stream of events</p>
+          <img src="img/simplestream.png" />
+        </section>
+
+        <section>
+          <h2>Composable streams</h2>
+          <img src="img/3excelstreams.png" />
+        </section>
+
+        <section>
+          <h2>Beyond Excel?</h2>
+          <img src="img/advancedexcel.png" />
+        </section>
+
+        <section>
+          <img src="img/advancedexcelstreams.png" />
+        </section>
+
+        <section>
+          <div class="stretch">
+            <iframe width="100%" height="600" src="http://jsfiddle.net/staltz/vdbvb3wo/8/embedded/result%2Cjs%2Chtml/presentation/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+          </div>
+        </section>
+
+        <section>
+          <div class="stretch">
+            <iframe width="1200px" height="600" src="http://rxmarbles.com" allowfullscreen="allowfullscreen" frameborder="0" style="max-width: 500%;width: 150%;height: 700px;max-height: 500%;-webkit-transform: scale(0.7);-webkit-transform-origin: 0 0;"></iframe>
+          </div>
+        </section>
+
+        <section>
+          <div class="stretch">
+            <iframe width="100%" height="600" src="http://jsfiddle.net/staltz/8jFJH/48/embedded/result%2Cjs%2Chtml/presentation/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+          </div>
+        </section>
+
+        <section>
+          <h2 style="color:#b7178c;">DUALITY</h2>
+          <h4>turns your mind upside down</h4>
+          <table style="margin:2em auto 0;">
+            <thead>
+              <tr>
+                <td style="text-align:center;height:2em;color:#592D89;padding-right:2em;"><strong>PULL</strong></td>
+                <td style="text-align:center;height:2em;color:#EC0C8E;"><strong>PUSH</strong></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:center;height:2em;padding-right:2em;">Interactive</td>
+                <td style="text-align:center;height:2em;">Reactive</td>
+              </tr>
+              <tr>
+                <td style="text-align:center;height:2em;padding-right:2em;">Iterable</td>
+                <td style="text-align:center;height:2em;">Observable</td>
+              </tr>
+              <tr>
+                <td style="font-size:70%;text-align:center;padding-right:3em;">
+                  Data consumer synchronously<br />pulls from producer
+                </td>
+                <td style="font-size:70%;text-align:center;">
+                  Data producer asynchronoulsy<br />pushes to consumers
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section data-background="#222">
+          <h2 style="color:#EC0C8E">Why ReactiveX?</h2>
+          <ul>
+            <li class="fragment" style="color:white">Separation of concerns</li>
+            <li class="fragment" style="color:white">Observables as inputs and outputs</li>
+            <li class="fragment" style="color:white">Async error handling</li>
+            <li class="fragment" style="color:white">Concurrency abstracted away</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Rx for the frontend</h2>
+          <p style="line-height:1.6em;"><em>Mouse events, keyboard inputs,<br />requests/responses, notifications,<br />MVC, analytics events,<br />progress bars, real-time interactions,<br />etc</em></p>
+        </section>
+
+        <section>
+          <h2>Rx for the backend</h2>
+          <p class="fragment">Serve Observables in your API to enable implementation independence and concurrency abstraction.</p>
+          <p class="fragment">Netflix and Couchbase have an Rx-based API.</p>
+          <p class="fragment">Rx makes real-time big data analytics possible.</p>
+        </section>
+
+        <section data-background="img/reactivex_bg.jpg">
+          <h2 style="color:white;line-height:1.6em;">RxJS, RxJava, RxScala, Rx.NET, RxCpp, RxPy, RxClojure, RxGroovy, ...</h2>
+        </section>
+
+        <section>
+          <h1><span style="color:#EC0C8E;line-height:1.2em;">Rx</span> in your software</h1>
+        </section>
+
+        <section>
+          <h2 style="color:#349D4A;margin-bottom:2em;">Thank you</h3>
+          <h3>Questions?</h3>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'linear',
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
